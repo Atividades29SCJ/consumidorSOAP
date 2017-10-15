@@ -8,8 +8,11 @@ public class Load {
 
 	public static void main(String[] args) {
 		
-		ConsumidorService consumidorService = new ConsumidorService();
-		Endpoint.publish("http://localhost:8080/service", consumidorService);
+		String port = System.getenv("PORT");
+        String host = "http://0.0.0.0:";
+        String uri = "/service";
+        ConsumidorService service = new ConsumidorService();
+        Endpoint.publish(host + port + uri, service);
 		
 	}
 	
