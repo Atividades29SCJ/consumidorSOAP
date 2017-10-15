@@ -26,7 +26,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>br.com.fiap.consumidor.load.Load</mainClass>
+                            <mainClass>br.com.fiap.consumidor.load.Loader</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

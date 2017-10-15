@@ -4,7 +4,7 @@ import javax.xml.ws.Endpoint;
 
 import br.com.fiap.consumidor.service.ConsumidorService;
 
-public class Load {
+public class Loader {
 
 	public static void main(String[] args) {
 		
@@ -13,7 +13,5 @@ public class Load {
         String uri = "/service";
         ConsumidorService service = new ConsumidorService();
         Endpoint.publish(host + port + uri, service);
-		
 	}
-	
 }
