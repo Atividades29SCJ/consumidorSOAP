@@ -5,7 +5,8 @@ import javax.jws.WebService;
 
 import br.com.fiap.consumidor.service.vo.UsuarioVO;
 
-@WebService()
+
+@WebService(endpointInterface = "br.com.fiap.consumidor.service.ConsumidorService", serviceName = "ConsumidorService")
 public class ConsumidorService {
 	
 	
